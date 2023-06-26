@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400&display=swap" rel="stylesheet">
+
+    <title>Evo Pharma Login</title>
+    <style>
+        
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+
+        illustration {
+            display: flex;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .image-container{
+            width: 63%;
+        }
+        
+        .login-background-img{
+            background-image: url(./image-background-overlay.png);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        .login-container{
+            width: 37%;
+        }
+        
+        .image-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .main-text{
+            color: #fff;
+            font-size: 4.25rem;
+            font-weight: 500;
+            line-height: 5.625rem;
+            letter-spacing: -0.085rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .body-text{
+            color: #fff;
+            font-size: 1.25rem;
+            font-family: Roboto;
+            font-weight: 400;
+            line-height: 1.875rem;
+        }
+
+        .login-form-container{
+            flex-direction: column;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .login-form-container h2 {
+            margin: 24px 0 12px 0;
+            color:#101828;
+            font-size: 1.875rem;
+            font-family: Roboto;
+            font-weight: 600;
+            line-height: 2.375rem;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        .form-group label {
+            margin-bottom: 4px;
+            display: block;
+            color: #344054;
+            font-size: 0.875rem;
+            font-family: Roboto;
+            font-weight: 500;
+            line-height: 1.25rem;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #D0D5DD;
+            background: #fff;
+
+            /* Shadow/xs */
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        }
+
+        .button-login{
+            display: flex;
+            cursor: pointer;
+            padding: 0.625rem 1.125rem;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #FAFF00;
+            background: #FAFF00;
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05), 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10);
+            color: #101828;
+            font-size: 1rem;
+            font-family: Roboto;
+            font-weight: 500;
+            line-height: 1.5rem;
+        }
+        
+
+        @media (max-width: 768px) {
+        /* tela com largura máxima de 768px (versão mobile) */
+        .image-container {
+            display: none;
+        }
+    }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="container image-container">
+            <div class="login-background-img">
+                <div class="container2 image-text">
+                    <h1 class="main-text">Alguma frase de efeito</h1>
+                    <p class="body-text">Lorem ipsum dolor sit amet consectetur. Purus ac porttitor congue praesent augue pharetra vestibulum libero. Id blandit dolor suscipit nunc molestie feugiat.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="login-container">
+            <div class="login-form-container">
+                <div class="logo">
+                    <img src="logo.png" alt="Logo">
+                </div>
+                  <h2>Login</h2>
+                  <form>
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" placeholder="Digite o seu email" required>
+                    </div>
+                    <button class="button-login" type="submit">ACESSAR</button>
+                  </form>
+            </div>
+        </div> 
+    </div>
+
+</html> 
